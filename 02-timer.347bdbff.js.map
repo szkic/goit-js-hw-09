@@ -1,0 +1,1 @@
+{"mappings":"AAAiBA,SAASC,cAAc","sources":["src/js/02-timer.js"],"sourcesContent":["const startBtn = document.querySelector('button[data-start]');\n"],"names":["document","querySelector"],"version":3,"file":"02-timer.347bdbff.js.map"}
