@@ -15,22 +15,18 @@ const changeColorInterval = () => {
   timer = setInterval(() => {
     changeColor();
   }, 1000);
-
-  stopEl.removeAttribute('disabled', '');
-
-  if (timer) {
-    startEl.setAttribute('disabled', '');
-  }
 };
 
 stopEl.setAttribute('disabled', '');
 
 startEl.addEventListener('click', () => {
   changeColorInterval();
+  stopEl.removeAttribute('disabled');
+  startEl.setAttribute('disabled', '');
 });
 
 stopEl.addEventListener('click', () => {
   clearInterval(timer);
-  startEl.removeAttribute('disabled', '');
+  startEl.removeAttribute('disabled');
   stopEl.setAttribute('disabled', '');
 });
