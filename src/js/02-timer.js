@@ -50,9 +50,8 @@ function convertMs(ms) {
 const addLeadingZero = value => {
   if (value.toString().length === 1) {
     return value.toString().padStart(2, '0');
-  } else {
-    return value;
   }
+  return value;
 };
 
 datePicerEl.addEventListener('input', e => {
